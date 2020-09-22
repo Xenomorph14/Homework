@@ -1,0 +1,5 @@
+setter là các hàm hoặc phương thức được dùng để lấy ra hoặc thiết lập giá trị cho các biến
+
+setFoo để gán giá trị cho thuộc tính foo
+
+Khởi tạo qua Object.difineProperties để chống ghi đè
