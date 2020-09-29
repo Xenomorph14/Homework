@@ -1,16 +1,21 @@
-let userInput=prompt("Nhap goi dinh dang HH:MM:SSPM or  HH:MM:SSAM");
-let arr=userInput.split("");
-let len=arr.length;
-if(arr[len-2]=="A")
-{
-    arr.splice(len-2,2);
-    console.log(arr.join(""));  
-}
-if(arr[len-2]=="P")
-{
-    arr.splice(len-2,2);
-    newStr=arr.join("");
-    num=Number(newStr.slice(0,2))+12;
-    time=`${num}${newStr.slice(2,8)}`
-    console.log(time);
+// 
+
+function convertTo24(timeStr)
+{   
+    timeStr=timeStr.toUpperCase();
+    if(timeStr.indexOf("AM") !=-1)
+    {
+        return timeStr.replace("AM","");
+    }
+    timeStr=timeStr.replace("PM","");
+    let arrTime=timeStr.split(":");
+    if(arrTime[0] < 12)
+    {
+        arrTime[0]=Number(arrTime[0])+12;
+    }else
+    {
+        arrTime[0]="00";    
+    }
+    return arrTime.join(":");
+
 }
