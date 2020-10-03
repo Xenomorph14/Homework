@@ -1,0 +1,6 @@
+sự khác nhau giữa function và arrow function
+
++arrow function sử dụng kí hiệu =>
++arrow function có thể bỏ qua return
++arrow function không định nghĩa lại this vì thế có thể dùng this ứng với ngữ cảnh gần nhất của nó
++arrow function không thể tại constructor

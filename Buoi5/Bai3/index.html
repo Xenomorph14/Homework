@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form-signin></form-signin>
+</body>
+
+<template id="template-input-wrapper">
+    <div class="input-wrapper">
+        <label for="" id="input-label"></label>
+        <input type="text" id="input-main">
+        <div id="input-error"></div>
+    </div>
+</template>
+<template id="template-form-signin">
+    <form class="form-signin">
+        <h2>Đăng nhập</h2>
+        <input-wrapper id="email" type="email"label="Email" error="" value=""></input-wrapper>
+        <input-wrapper id="password" type="password" label="Mật khẩu" error="" value=""></input-wrapper>
+        <button>Sign in</button>
+    </form>
+
+</template>
+<script src="app.js" type="module"></script>
+</html>
