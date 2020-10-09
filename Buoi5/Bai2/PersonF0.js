@@ -2,10 +2,8 @@ import Person from "./Person.js"
 
 export class PersonF0 extends Person
 {
-    constructor()
+    constructor(name,phoneNum,pastLocation)
     {
         super()
     }
 }
-
-let personF0=PersonF0()
